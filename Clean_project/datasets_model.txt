@@ -1,0 +1,6 @@
+Camera_3_video='https://drive.google.com/file/d/1XSQcRRK4493DuDTDgM2WmCuX_22PWsh_/view?usp=drive_link'
+Camera_4_video='https://drive.google.com/file/d/1ESziYS0YWM2taCP-F8f6YOs15fG4KzSn/view?usp=drive_link'
+ft_resnet_model ='https://drive.google.com/drive/folders/17M4xA9D2ekCLv-0Ik77R1KwseBqiA5Ru?usp=drive_link'
+gallery_dataset_Created ='https://drive.google.com/drive/folders/179xyCveqBs3TUhj_xlMHUP1zDieyjPkr?usp=sharing'
+
+Image_Saving_Format=Trackid_Camerano_Frameid

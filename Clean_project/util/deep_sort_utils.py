@@ -7,9 +7,7 @@ def initialize_deep_sort_tracker(max_age=10, n_init=5):
     Initializes and returns a DeepSort tracker object with configurable parameters.
 
     Args:
-        max_cosine_distance (float): Max cosine distance for the metric.
-        nn_budget (int): Budget for nearest neighbor distance metric.
-        max_iou_distance (float): Max IOU distance for matching.
+
         max_age (int): Maximum age of the tracker.
         n_init (int): Number of frames to initialize a track.
 
