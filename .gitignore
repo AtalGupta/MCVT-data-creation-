@@ -1,0 +1,9 @@
+
+100Cofounder_POC/models/ft_ResNet50/_DS_Store
+100Cofounder_POC/models/ft_ResNet50/model.py
+*.pth
+*.yaml
+*.jpg
+*.py
+*.pt
+*.mp4

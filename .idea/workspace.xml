@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40dce2ec-04b3-4b03-9cbb-505bb1f8dd8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/MCVT-data-creation-.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MCVT-data-creation-.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/100Cofounder_POC/utils/camera_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/100Cofounder_POC/utils/camera_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/100Cofounder_POC/utils/reid_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/100Cofounder_POC/utils/reid_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/100Cofounder_POC/utils/shared_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/100Cofounder_POC/utils/shared_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +42,10 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dataset__creation",
-    "last_opened_file_path": "C:/Users/aatal/OneDrive/Documents/GitHub/MCVT-data-creation-/Clean_project",
+    "git-widget-placeholder": "live__POC",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/aatal/OneDrive/Documents/GitHub/MCVT-data-creation-",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,8 +55,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\aatal\OneDrive\Documents\GitHub\MCVT-data-creation-\Clean_project" />
       <recent name="C:\Users\aatal\OneDrive\Documents\GitHub\MCVT-data-creation-" />
+      <recent name="C:\Users\aatal\OneDrive\Documents\GitHub\MCVT-data-creation-\Clean_project" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -66,10 +69,26 @@
       <updated>1700750770780</updated>
       <workItem from="1700750771995" duration="768000" />
       <workItem from="1700795044305" duration="1753000" />
+      <workItem from="1702074302087" duration="616000" />
+      <workItem from="1702074953446" duration="625000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MCVT_data_creation_$main.coverage" NAME="main Coverage Results" MODIFIED="1702074972080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/100Cofounder_POC" />
   </component>
 </project>

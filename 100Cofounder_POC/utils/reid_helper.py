@@ -13,6 +13,7 @@ GALLERY_FOLDER_PATH = 'gallery/'
 FEATURE_FILE_PATH = 'gallery_feature.npy'
 FILENAME_MAPPING_PATH = 'gallery_mapping.json'
 
+
 def load_model(model_path, class_num=751, device='cpu'):
     """
     Load and return the ft_ResNet50 model.
@@ -30,6 +31,8 @@ def load_model(model_path, class_num=751, device='cpu'):
     model.load_state_dict(state_dict)
     model.eval()
     return model
+
+
 def process_pil_image(pil_image):
     """
     Applies the necessary transformations to a PIL image for feature extraction.
@@ -129,7 +132,7 @@ def update_gallery(new_image_path, model, feature_file_path, filename_mapping_pa
 
 def reidentify(cropped_feature, feature_file_path, filename_mapping_path, threshold=0.7):
     """
-    Performs reidentification by comparing the feature of a cropped image7
+    Performs reidentification by comparing the feature of a cropped image
     against the existing gallery features. Returns a tracking ID.
 
     Parameters:
@@ -141,7 +144,6 @@ def reidentify(cropped_feature, feature_file_path, filename_mapping_path, thresh
     Returns:
     str: The tracking ID if a match is found, otherwise a new unique ID.
     """
-
     # Check if the feature file exists and is not empty
     if os.path.exists(feature_file_path) and os.path.getsize(feature_file_path) > 0:
         existing_features = np.load(feature_file_path)
@@ -250,7 +252,6 @@ def extract_save_feature_dir(directory_path, model, save_directory):
         np.save(feature_save_path, feature)
 
 
-
 def extract_and_update_gallery_features(gallery_path, model, feature_save_path):
     """
     Extracts features from all images in the gallery, clears the existing feature files,
@@ -278,7 +279,9 @@ def extract_and_update_gallery_features(gallery_path, model, feature_save_path):
             feature_save_file = os.path.join(feature_save_path, feature_filename)
             np.save(feature_save_file, feature)
 
-def assign_track_ids_and_update_gallery(similarity_matrix, batch_filenames, gallery_filenames, batch_dir, main_gallery_dir):
+
+def assign_track_ids_and_update_gallery(similarity_matrix, batch_filenames, gallery_filenames, batch_dir,
+                                        main_gallery_dir):
     """
     Assigns track IDs to batch images based on maximum similarity scores and updates the gallery.
 
@@ -308,7 +311,16 @@ def assign_track_ids_and_update_gallery(similarity_matrix, batch_filenames, gall
 
 
 def load_features_from_directory(directory):
-    """Load features from .npy files in a specified directory."""
+    """
+    Load features from .npy files in a specified directory.
+
+    Parameters:
+    directory (str): The directory from which to load the features.
+
+    Returns:
+    np.ndarray: The loaded features.
+    list: The filenames of the loaded features.
+    """
     features = []
     filenames = []
     for file in sorted(os.listdir(directory)):
@@ -318,6 +330,7 @@ def load_features_from_directory(directory):
             features.append(feature)
             filenames.append(os.path.splitext(file)[0])
     return np.array(features), filenames
+
 
 def calculate_similarity_matrix(batch_feature_dir, gallery_feature_dir):
     """
@@ -329,6 +342,8 @@ def calculate_similarity_matrix(batch_feature_dir, gallery_feature_dir):
 
     Returns:
     np.ndarray: The cosine similarity matrix.
+    list: The filenames of the batch features.
+    list: The filenames of the gallery features.
     """
     batch_features, batch_filenames = load_features_from_directory(batch_feature_dir)
     gallery_features, gallery_filenames = load_features_from_directory(gallery_feature_dir)
